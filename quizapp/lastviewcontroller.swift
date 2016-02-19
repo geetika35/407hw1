@@ -13,6 +13,11 @@ class lastViewController: UIViewController {
     @IBOutlet weak var labl: UILabel!
     
     //var correctans:Int = 0
+   
+    @IBAction func rst(sender: AnyObject) {
+        
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     var correctans = 0
     var recvdstring1: String = ""
     var recvdstring2: String = ""
@@ -49,7 +54,8 @@ class lastViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
+    
+    
     /*
     // MARK: - Navigation
 
