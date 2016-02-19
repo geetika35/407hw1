@@ -11,7 +11,9 @@ import UIKit
 class lastViewController: UIViewController {
   
     @IBOutlet weak var labl: UILabel!
-    var correctans:Int = 0
+    
+    //var correctans:Int = 0
+    var correctans = 0
     var recvdstring1: String = ""
     var recvdstring2: String = ""
     var recvdstring3: String = ""
@@ -22,17 +24,17 @@ class lastViewController: UIViewController {
         
         if(recvdstring1 == "chair")
         {
-            correctans = correctans + 1
+            correctans++
         }
         
         if(recvdstring2 == "cold")
         {
-            correctans = correctans + 1
+            correctans++
         }
         
         if(recvdstring3 == "e" || recvdstring3 == "E")
         {
-            correctans = correctans + 1
+            correctans++
     
         }
         

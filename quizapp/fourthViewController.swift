@@ -11,6 +11,8 @@ import UIKit
 class fourthViewController: UIViewController {
 
     @IBOutlet weak var textfield3: UITextField!
+    var recvdstring1: String = ""
+    var recvdstring2: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,10 +25,12 @@ class fourthViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let fourthVC : lastViewController = segue.destinationViewController
+        let lastVC : lastViewController = segue.destinationViewController
             as! lastViewController
         
-        fourthVC.recvdstring3 = textfield3.text!
+        lastVC.recvdstring1 = recvdstring1
+        lastVC.recvdstring2 = recvdstring2
+        lastVC.recvdstring3 = textfield3.text!
     }
     /*
     // MARK: - Navigation

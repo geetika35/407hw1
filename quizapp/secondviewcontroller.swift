@@ -11,6 +11,7 @@ import UIKit
 class secondViewController: UIViewController {
 
     @IBOutlet weak var textfield1: UITextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,9 +24,11 @@ class secondViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let secondVC : lastViewController = segue.destinationViewController as! lastViewController
+        let thirdVC : thirdViewController = segue.destinationViewController as! thirdViewController
         
-        secondVC.recvdstring1 = textfield1.text!
+        thirdVC.recvdstring1 = textfield1.text!
+        
+        
     }
 
     /*
